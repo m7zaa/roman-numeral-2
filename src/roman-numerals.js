@@ -5,7 +5,7 @@ export function romanNumerals(input) {
   var kilo = ["M", "MM", "MMM"];
   var rn = [ones, tens, cent, kilo];
 
-  var digits = input.split("");
+  var digits = input.toString().split("");
   digits.reverse();
   for(var i=0; i<digits.length; i++) {
     digits[i] = parseInt(digits[i]);
